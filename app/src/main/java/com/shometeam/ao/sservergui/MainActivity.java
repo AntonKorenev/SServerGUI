@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
 
         final Context appContext = this.getApplicationContext();
 
-        new Thread(){
+        new Thread(){//
             @Override
             public void run() {
                 super.run();
