@@ -1,6 +1,4 @@
-package com.shometeam.ao.sservergui;
-
-import android.util.Log;
+package connectors;
 
 import java.util.LinkedList;
 
@@ -8,10 +6,10 @@ import java.util.LinkedList;
  * Created by ao on 04.06.15.
  */
 public class LogUtil {
-    public static enum TAG {SERVER,APP,ARDUINO,NEURAL_NETWORK,WEATHER_SERVICE,DATA_BASE,ALL};
+    public static enum TAG {SERVER,APP,ARDUINO,NEURAL_NETWORK,WEATHER_SERVICE,DATA_BASE,DROPBOX,ALL};
     private LinkedList<TagList> mTagLists;
 
-    LogUtil(){
+    public LogUtil(){
         mTagLists = new LinkedList<>();
         for(int i=0; i<TAG.values().length; i++){
             mTagLists.add(new TagList(TAG.values()[i]) );
